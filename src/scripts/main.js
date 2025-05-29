@@ -7,6 +7,6 @@ const imagesArray = Array.from(images);
 imagesArray.forEach((image) => {
   image.addEventListener('click', (el) => {
     el.preventDefault();
-    mainImg.src = event.target.closest('.list-item__link').href;
+    mainImg.src = el.target.closest('.list-item__link').href;
   });
 });
